@@ -12,4 +12,10 @@ module.exports = app => {
     // Delete a Blog with id
     router.delete("/:id", blogs.delete);
     app.use('/blog', router);
+
+    // Retrieve a single Blog with id
+    router.get("/:id", blogs.findOne);
+
+    
+
 }

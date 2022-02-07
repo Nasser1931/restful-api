@@ -47,4 +47,7 @@ module.exports = app => {
     router.post("/login/create", login.create);
     router.get("/", login.findAll);
     app.use('/login', router);
+
+
+    
 };
